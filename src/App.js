@@ -8,8 +8,9 @@ function App() {
   return (
     <div >
      <NavBar/>
+     <ListaDeComponentes Productos="Flores, Personalizados, Piñatas, Cajas, Burbujas"/>
      
-     <ListaDeComponentes/>
+     
      
     </div>
   );
