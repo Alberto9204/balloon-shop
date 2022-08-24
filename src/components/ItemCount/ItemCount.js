@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 
 export const ItemCount = () => {
 
-     let [counter, setCounter ] = useState(0)
+     let [counter, setCounter ] = useState(1)
 
      const handlesumar = () =>{
         if (counter < 15){ 
@@ -15,14 +15,14 @@ export const ItemCount = () => {
      }
 
      const handlerestar = () =>{
-        if (counter > 0){ 
+        if (counter > 1){ 
         setCounter(counter - 1)
         }
      }
     return(
         <div className="container my-2">
             <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={process.env.PUBLIC_URL + './img/globo_graduacion.jpeg'} />
+      <Card.Img variant="top" src={process.env.PUBLIC_URL + './img/globo_graduacion.jpeg'}/>
       <Card.Body className='primerCard'>
         <Card.Title>Globo de Graduacion</Card.Title>
         <Card.Text>
