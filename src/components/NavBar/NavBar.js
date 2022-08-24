@@ -9,7 +9,7 @@ export const NavBar = () => {
         <><header className="header">
             <nav className="nav">
                 <div>
-                    <img src={process.env.PUBLIC_URL + '/logo_meraki.png'} alt="logo" width="180" height="125" />
+                    <img src={process.env.PUBLIC_URL + './img/logo_meraki.png'} alt="logo" width="180" height="125" />
                 </div>
                 <div>
                     <Nav
