@@ -1,48 +1,48 @@
 
-let ItemList = [
+   export const  producto= [
     {
         id : 1,
         tipo : "burbuja",
-        img : './img/burbuja/globo_graduacion.jpeg',
+        img : './img/burbujas/globo_graduacion.jpeg',
         name : "Globo de Graduacion",
         descripcion : "Tu ser querido termina su ciclo de estudios? Felicitalo con un hermoso globo para que nunca olvide este increible momento",
-        costo : 120,
+        costo : "Costo: $120 pesos",
         stock : 15,
     },
     {
         id : 2,
         tipo : "burbuja",
-        img : './img/burbuja/burbuja2.jpeg',
+        img : './img/burbujas/burbuja2.jpeg',
         name : "Globo de Bad Bunny",
         descripcion : "El globo con mas flow del mercado",
-        costo : 120,
+        costo : "Costo: $120 pesos",
         stock : 15,
     },
     {
         id : 3,
         tipo : "burbuja",
-        img : './img/burbuja/burbuja3.jpeg',
+        img : './img/burbujas/burbuja3.jpeg',
         name : "Globo de Nacimiento",
         descripcion : "Un hermoso detalle para un dia inolvidable",
-        costo : 120,
+        costo : "Costo: $120 pesos",
         stock : 15,
     },
     {
         id : 4,
         tipo : "burbuja",
-        img : './img/burbuja/burbuja4.jpeg',
+        img : './img/burbujas/burbuja4.jpeg',
         name : "Globo de Graduacion",
         descripcion : "Tu ser querido termina su ciclo de estudios? Felicitalo con un hermoso globo para que nunca olvide este increible momento",
-        costo : 120,
+        costo : "Costo: $120 pesos",
         stock : 15,
     },
     {
         id : 5,
         tipo : "burbuja",
-        img : './img/burbuja/globo_graduacion.jpeg',
+        img : './img/burbujas/globo_graduacion.jpeg',
         name : "Globo de Maestro",
         descripcion : "Un bello detalle para aquel que comparte su conocimiento a otros.",
-        costo : 120,
+        costo : "Costo: $120 pesos",
         stock : 15,
     },
     {
@@ -51,7 +51,7 @@ let ItemList = [
         img : './img/cajas/caja1.jpeg',
         name : "Caja misteriosa",
         descripcion : "Soprende a tu ser querido con una caja sorpresa",
-        costo : 150,
+        costo : "Costo: $150 pesos",
         stock : 15,
     },
     {
@@ -60,7 +60,7 @@ let ItemList = [
         img : './img/cajas/caja2.jpeg',
         name : "Caja Stranger Things",
         descripcion : "Personalizamos tu caja de tu serie favorita",
-        costo : 180,
+        costo : "Costo: $180 pesos",
         stock : 15,
     },
     {
@@ -69,7 +69,7 @@ let ItemList = [
         img : './img/cajas/caja3.jpeg',
         name : "Caja Feliz Cumpleaños",
         descripcion : "Deseale un Feliz cumpleaños a tu ser querido",
-        costo : 160,
+        costo : "Costo: $160 pesos",
         stock : 15,
     },
     {
@@ -78,7 +78,7 @@ let ItemList = [
         img : './img/cajas/caja4.jpeg',
         name : "Caja Tierra de Osos",
         descripcion : "Personalizamos tu caja de tu pelicula favorita",
-        costo : 140,
+        costo : "Costo: $140 pesos",
         stock : 15,
     },
     {
@@ -87,7 +87,7 @@ let ItemList = [
         img : './img/cajas/caja5.jpeg',
         name : "Caja La Princesa y el Sapo",
         descripcion : "Personalizamos tu caja de tu pelicula favorita",
-        costo : 140,
+        costo : "Costo: $140 pesos",
         stock : 15,
     },
     {
@@ -96,7 +96,7 @@ let ItemList = [
         img : './img/cajas/caja6.jpeg',
         name : "Caja Bob esponja",
         descripcion : "Personalizamos tu caja de tu serie favorita",
-        costo : 140,
+        costo : "Costo: $140 pesos",
         stock : 15,
     },
     {
@@ -105,7 +105,7 @@ let ItemList = [
         img : './img/flores/flor1.jpeg',
         name : "Arreglo Floral",
         descripcion : "Por que regalar flores nunca pasa de moda",
-        costo : 240,
+        costo : "Costo: $240 pesos",
         stock : 15,
     },
     {
@@ -114,7 +114,7 @@ let ItemList = [
         img : './img/flores/flor2.jpeg',
         name : "Arreglo Floral con globo",
         descripcion : "Una flor para otra flor",
-        costo : 200,
+        costo : "Costo: $200 pesos",
         stock : 15,
     },
     {
@@ -123,7 +123,7 @@ let ItemList = [
         img : './img/flores/flor3.jpeg',
         name : "Arreglo Floral",
         descripcion : "Una flor para otra flor",
-        costo : 200,
+        costo : "Costo: $200 pesos",
         stock : 15,
     },
     {
@@ -132,7 +132,7 @@ let ItemList = [
         img : './img/personalizados/personalizado1.jpeg',
         name : "Dulce Graduación",
         descripcion : "Personalizamos para eventos especiales",
-        costo : 450,
+        costo : "Costo: $450 pesos",
         stock : 15,
     },
     {
@@ -141,7 +141,7 @@ let ItemList = [
         img : './img/personalizados/perso2.jpeg',
         name : "Aro Fotografico",
         descripcion : "Armamos tu set fotografico para tu dia especial",
-        costo : 480,
+        costo : "Costo: $480 pesos",
         stock : 15,
     }, 
     {
@@ -150,7 +150,7 @@ let ItemList = [
         img : './img/personalizados/perso3.jpeg',
         name : "Personalizado Cumpleañero",
         descripcion : "Personalizamos nuestros arreglos para esa persona especial",
-        costo : 650,
+        costo : "Costo: $650 pesos",
         stock : 15,
     }, 
     {
@@ -159,7 +159,7 @@ let ItemList = [
         img : './img/personalizados/perso4.jpeg',
         name : "Detalles deliciosos",
         descripcion : "Hacemos arreglos de lo que tu quieras",
-        costo : 350,
+        costo : "Costo: $350 pesos",
         stock : 15,
     }, 
     {
@@ -168,7 +168,7 @@ let ItemList = [
         img : './img/personalizados/perso5.jpeg',
         name : "Personalizado Cumpleañero",
         descripcion : "Personalizamos nuestros arreglos para esa persona especial",
-        costo : 550,
+        costo : "Costo: $550 pesos",
         stock : 15,
     }, 
     {
@@ -177,45 +177,45 @@ let ItemList = [
         img : './img/personalizados/perso6.jpeg',
         name : "Detalles unicos",
         descripcion : "Arreglos unicos y originales",
-        costo : 550,
+        costo : "Costo: $550 pesos",
         stock : 15,
     },
     {
         id : 21,
         tipo : "pinata",
-        img : './img/piantas/pinata1.jpeg',
+        img : './img/pinatas/pinata1.jpeg',
         name : "Piñata de pastel",
         descripcion : "Piñatas con modelos unicos para tus fiestas",
-        costo : 350,
+        costo : "Costo: $350 pesos",
         stock : 15,
     },
     {
         id : 22,
         tipo : "pinata",
-        img : './img/piantas/pinata2.jpeg',
+        img : './img/pinatas/pinata2.jpeg',
         name : "Piñata de corazón",
         descripcion : "No todas las Piñatas fueron para romperse",
-        costo : 350,
+        costo : "Costo: $350 pesos",
         stock : 15,
     },
     {
         id : 23,
         tipo : "pinata",
-        img : './img/piantas/pinata3.jpeg',
+        img : './img/pinatas/pinata3.jpeg',
         name : "Piñata de pulpo",
         descripcion : "Tambien personalizamos tus piñatas de tus personajes favoritos.",
-        costo : 350,
+        costo : "Costo: $350 pesos",
         stock : 15,
     },
     {
         id : 24,
         tipo : "pinata",
-        img : './img/piantas/pinata4.jpeg',
+        img : './img/pinatas/pinata4.jpeg',
         name : "Piñata Cumpleañera",
         descripcion : "Piñatas con modelos unicos para tus fiestas",
-        costo : 380,
+        costo : "Costo: $380 pesos",
         stock : 15,
     },
-
-
 ]
+
+    
