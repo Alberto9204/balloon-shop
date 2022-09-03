@@ -1,0 +1,13 @@
+.main{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Container{
+    padding: 15px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}

@@ -1,18 +1,16 @@
 
 import './App.css';
-import { NavBar } from './components/NavBar/NavBar';
-import { ListaDeComponentes } from './components/ListaDeComponentes/ListaDeComponentes';
-import { ItemCount } from './components/ItemCount/ItemCount'
+import { NavBar } from './components/NavBar/NavBar'
 import { ItemList } from './components/ItemList/ItemList'
+import { ItemDetail } from './components/ItemDetail/ItemDetail'
 
 
 function App() {
   return (
     <div >
      <NavBar/>
-     <ListaDeComponentes/>
-     <ItemCount/>
      <ItemList/>
+     <ItemDetail/>
      
      
      

@@ -20,16 +20,16 @@ export const ItemCount = () => {
         }
      }
     return(
-        <div className="container my-2">
-            <Card style={{ width: '18rem' }}>
+        
+          
                 <Card.Body className='primerCard'>
                           <button onClick={handlerestar} className='btn btn-outline-dark '>-</button>
                               <span className='mx-2'> {counter} </span>
                           <button onClick={handlesumar} className='btn btn-dark '>+</button>
                           <Button variant="dark m-2 start-50">Agregar al Carrito</Button>
                  </Card.Body>
-              </Card>
-        </div>
+             
+       
     )
 
 }
