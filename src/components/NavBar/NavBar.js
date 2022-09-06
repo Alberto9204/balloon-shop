@@ -3,31 +3,25 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from 'react-bootstrap/Nav';
 import { CartWidget } from './CartWidget/CartWidget.js';
+import { Link } from 'react-router-dom'
+
+
+
 
 export const NavBar = () => {
     return (
         <><header className="header">
             <nav className="nav">
                 <div>
-                    <img src={'./img/logo_meraki.png'} alt="logo" width="180" height="125" />
+                   <Link to="/"><img src={'../img/logo_meraki.png'} alt="logo" width="180" height="125" /></Link>
                 </div>
                 <div>
-                    <Nav
-                        activeKey="/home"
-                        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-                    >
-                        <Nav.Item>
-                            <Nav className="link"> Productos </Nav>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav className="link">Procesos</Nav>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav className="link">Nosotros</Nav>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav className="link">Ubicacion</Nav>
-                        </Nav.Item>
+                    <Nav >
+                        <Link to='/produ/burbuja' className="link"> Burbujas </Link>
+                        <Link to='/produ/caja' className="link"> Cajas </Link>
+                        <Link to='/produ/flores' className="link"> Flores </Link>
+                        <Link to='/produ/personal' className="link"> Personalizado </Link>
+                        <Link to='/produ/pinata' className="link"> Piñatas </Link>
                     </Nav>
                 </div>
 

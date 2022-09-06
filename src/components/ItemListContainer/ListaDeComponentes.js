@@ -1,24 +1,52 @@
+import { useEffect, useState  } from 'react'
+import { PedirDatos } from '../../helpers/PedirDatos'
+import { ItemList } from '../ItemList/ItemList'
 import './ListaDeComponentes.css'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import { useParams } from 'react-router-dom'
+import Spinner from 'react-bootstrap/Spinner';
 
 
 
-export const ListaDeComponentes = ( {produ = []} ) => {
-  return(
-    <div className="Container m-3 col-sm-6" >
-        {produ.map((prod) =>{
-            return <div key={prod.id} className="Container m-3 col-sm-6">
-                    <Card style={{ width: '18rem'}} >
-                      <Card.Img style={{ height: '18rem'}} variant="top" src={prod.img} />
-                        <Card.Body  className='primerCard'>
-                          <Card.Title>{prod.name}</Card.Title>
-                                    <Button variant="dark m-2 start-50">Mas Información</Button>
-                          </Card.Body>
-                      </Card>
-                  </div>
-        })}
-    </div>
-)
+
+export const ListaDeComponentes = () => {
+ const [produ, setProdu]  = useState([])
+ const [loading, setLoading] = useState(true)
+
+ const { categoryId } = useParams()
+
+   
+    useEffect(() => {
+        setLoading(true)
+        PedirDatos()
+        .then( (res) => {
+            if (!categoryId) {
+              setProdu(res)
+            } else{
+              setProdu (res.filter((prod) => prod.category === categoryId))
+            }
+            
+        })
+        .finally( () => {
+            setLoading(false)
+        })
+    }, [categoryId])
+
+    return(
+        <div>
+            {
+              loading 
+              ?  
+                
+                  <Spinner animation="border" role="status">
+                    <span>Loading...</span>
+                  </Spinner>
+                
+              
+              :<ItemList produ={produ}/>
+              
+            }
+
+        </div>
+    )
+
 }
-

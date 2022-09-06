@@ -1,29 +1,21 @@
-import { useEffect, useState  } from 'react'
-import { PedirDatos } from '../../helpers/PedirDatos'
-import { ListaDeComponentes } from '../ItemListContainer/ListaDeComponentes'
 import './Itemlist.css'
+import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom'
 
-
-export const ItemList = () => {
-
- const [produ, setProdu]  = useState([])
-
-    console.log(produ)
-   
-    useEffect(() => {
-        PedirDatos()
-        .then( (res) => {
-            setProdu(res)
-        })
-        .finally( () => {
-            console.log("Terminamos")
-        })
-    }, [])
-
-    return(
-        <div>
-            <ListaDeComponentes produ={produ}/>
-        </div>
-    )
-
+export const ItemList= ( {produ = []} ) => {
+  return(
+    <div className="Container m-3 col-sm-6" >
+        {produ.map((prod) =>{
+            return <div key={prod.id} className="Container m-3 col-sm-6">
+                    <Card style={{ width: '18rem'}} >
+                      <Card.Img style={{ height: '18rem'}} variant="top"  src= {prod.img} alt={prod.name} />
+                        <Card.Body  className='primerCard'>
+                          <Card.Title>{prod.name}</Card.Title>
+                                    <Link to={`/item/${prod.id}`}className='btn btn-dark my-2'>Mas Información</Link>
+                          </Card.Body>
+                      </Card>
+                  </div>
+        })}
+    </div>
+)
 }
