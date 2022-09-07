@@ -33,12 +33,9 @@ export const ListaDeComponentes = () => {
             {
               loading 
               ?  
-                
                   <Spinner animation="grow" role="status">
                     <span className=" p-5 col-sm-3">Cargando</span>
                   </Spinner>
-                
-              
               :<ItemList produ={produ}/>
               
             }
