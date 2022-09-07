@@ -15,13 +15,7 @@ function App() {
         <Route path='/produ/:categoryId/' element={ <ListaDeComponentes/> }/>
         <Route path='/item/:itemId' element={ <ItemDetailContainer/> }/> 
         <Route path='*' element= { < Navigate to="/" />} />
-          
-        
       </Routes>
-     
-     
-     
-     
      </BrowserRouter>
   );
 }

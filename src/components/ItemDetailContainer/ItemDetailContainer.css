@@ -11,3 +11,9 @@
     justify-content: space-around;
 
 }
+
+.primerCard{
+    text-align: center;
+    background-color: rgba(250, 220, 241, 0.897);
+    border: 2px;
+}

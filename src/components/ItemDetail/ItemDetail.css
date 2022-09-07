@@ -3,3 +3,17 @@
     background-color: rgba(250, 220, 241, 0.897);
     border: 2px;
 }
+
+.main{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Container{
+    padding: 15px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}

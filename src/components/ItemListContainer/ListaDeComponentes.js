@@ -6,12 +6,9 @@ import { useParams } from 'react-router-dom'
 import Spinner from 'react-bootstrap/Spinner';
 
 
-
-
 export const ListaDeComponentes = () => {
  const [produ, setProdu]  = useState([])
  const [loading, setLoading] = useState(true)
-
  const { categoryId } = useParams()
 
    
@@ -37,8 +34,8 @@ export const ListaDeComponentes = () => {
               loading 
               ?  
                 
-                  <Spinner animation="border" role="status">
-                    <span>Loading...</span>
+                  <Spinner animation="grow" role="status">
+                    <span className=" p-5 col-sm-3">Cargando</span>
                   </Spinner>
                 
               
