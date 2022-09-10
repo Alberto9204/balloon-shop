@@ -3,3 +3,11 @@
     background-color: rgba(250, 220, 241, 0.897);
     border: 2px;
 }
+
+.link{
+    color:white;
+    align-items: center;
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
+}

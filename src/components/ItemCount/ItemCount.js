@@ -1,32 +1,34 @@
 import './ItemCount.css'
-import { useState  } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom'
 
 
-export const ItemCount = () => {
 
-     let [counter, setCounter ] = useState(1)
+export const ItemCount = ({max, counter, setCounter, handelAgregar}) => {
 
-     const handlesumar = () =>{
-        if (counter < 15){ 
+
+     const handleSumar = () =>{
+        if (counter < max){ 
         setCounter(counter + 1)
         }
      }
 
-     const handlerestar = () =>{
+     const handleRestar = () =>{
         if (counter > 1){ 
         setCounter(counter - 1)
         }
      }
+
+  
     return(
         
           
                 <Card.Body className='primerCard'>
-                          <button onClick={handlerestar} className='btn btn-outline-dark '>-</button>
+                          <button onClick={handleRestar} className='btn btn-outline-dark '>-</button>
                               <span className='mx-2'> {counter} </span>
-                          <button onClick={handlesumar} className='btn btn-dark '>+</button>
-                          <Button variant="dark m-2 start-50">Agregar al Carrito</Button>
+                          <button onClick={handleSumar} className='btn btn-dark '>+</button>
+                          <Button onClick={handelAgregar}variant="dark m-2 start-50"><Link to='/cart/' className="link"> Agregar al Carrito </Link></Button>
                  </Card.Body>
              
        

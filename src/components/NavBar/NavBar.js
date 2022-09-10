@@ -16,7 +16,7 @@ export const NavBar = () => {
                    <Link to="/"><img src={'../img/logo_meraki.png'} alt="logo" width="180" height="125" /></Link>
                 </div>
                 <div>
-                    <Nav >
+                    <Nav>
                         <Link to='/produ/burbuja' className="link"> Burbujas </Link>
                         <Link to='/produ/caja' className="link"> Cajas </Link>
                         <Link to='/produ/flores' className="link"> Flores </Link>
