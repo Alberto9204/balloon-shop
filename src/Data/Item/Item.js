@@ -6,7 +6,7 @@
         img : '../img/burbujas/globo_graduacion.jpeg',
         name : "Globo de Graduacion",
         descripcion : "Tu ser querido termina su ciclo de estudios? Felicitalo con un hermoso globo para que nunca olvide este increible momento",
-        costo : "Costo: $120 pesos",
+        costo : 120,
         stock : 15,
     },
     {
@@ -15,7 +15,7 @@
         img : '../img/burbujas/burbuja2.jpeg',
         name : "Globo de Bad Bunny",
         descripcion : "El globo con mas flow del mercado",
-        costo : "Costo: $120 pesos",
+        costo : 120,
         stock : 15,
     },
     {
@@ -24,7 +24,7 @@
         img : '../img/burbujas/burbuja3.jpeg',
         name : "Globo de Nacimiento",
         descripcion : "Un hermoso detalle para un dia inolvidable",
-        costo : "Costo: $120 pesos",
+        costo : 120,
         stock : 15,
     },
     {
@@ -33,7 +33,7 @@
         img : '../img/burbujas/burbuja4.jpeg',
         name : "Globo de Graduacion",
         descripcion : "Tu ser querido termina su ciclo de estudios? Felicitalo con un hermoso globo para que nunca olvide este increible momento",
-        costo : "Costo: $120 pesos",
+        costo : 120,
         stock : 15,
     },
     {
@@ -42,7 +42,7 @@
         img : '../img/burbujas/globo_graduacion.jpeg',
         name : "Globo de Maestro",
         descripcion : "Un bello detalle para aquel que comparte su conocimiento a otros.",
-        costo : "Costo: $120 pesos",
+        costo : 120,
         stock : 15,
     },
     {
@@ -51,7 +51,7 @@
         img : '../img/cajas/caja1.jpeg',
         name : "Caja misteriosa",
         descripcion : "Soprende a tu ser querido con una caja sorpresa",
-        costo : "Costo: $150 pesos",
+        costo : 150,
         stock : 15,
     },
     {
@@ -60,7 +60,7 @@
         img : '../img/cajas/caja2.jpeg',
         name : "Caja Stranger Things",
         descripcion : "Personalizamos tu caja de tu serie favorita",
-        costo : "Costo: $180 pesos",
+        costo : 180,
         stock : 15,
     },
     {
@@ -69,7 +69,7 @@
         img : '../img/cajas/caja3.jpeg',
         name : "Caja Feliz Cumpleaños",
         descripcion : "Deseale un Feliz cumpleaños a tu ser querido",
-        costo : "Costo: $160 pesos",
+        costo : 160,
         stock : 15,
     },
     {
@@ -78,7 +78,7 @@
         img : '../img/cajas/caja4.jpeg',
         name : "Caja Tierra de Osos",
         descripcion : "Personalizamos tu caja de tu pelicula favorita",
-        costo : "Costo: $140 pesos",
+        costo : 140,
         stock : 15,
     },
     {
@@ -87,7 +87,7 @@
         img : '../img/cajas/caja5.jpeg',
         name : "Caja La Princesa y el Sapo",
         descripcion : "Personalizamos tu caja de tu pelicula favorita",
-        costo : "Costo: $140 pesos",
+        costo : 140,
         stock : 15,
     },
     {
@@ -96,7 +96,7 @@
         img : '../img/cajas/caja6.jpeg',
         name : "Caja Bob esponja",
         descripcion : "Personalizamos tu caja de tu serie favorita",
-        costo : "Costo: $140 pesos",
+        costo : 140,
         stock : 15,
     },
     {
@@ -105,7 +105,7 @@
         img : '../img/flores/flor1.jpeg',
         name : "Arreglo Floral",
         descripcion : "Por que regalar flores nunca pasa de moda",
-        costo : "Costo: $240 pesos",
+        costo : 240,
         stock : 15,
     },
     {
@@ -114,7 +114,7 @@
         img : '../img/flores/flor2.jpeg',
         name : "Arreglo Floral con globo",
         descripcion : "Una flor para otra flor",
-        costo : "Costo: $200 pesos",
+        costo : 200,
         stock : 15,
     },
     {
@@ -123,7 +123,7 @@
         img : '../img/flores/flor3.jpeg',
         name : "Arreglo Floral",
         descripcion : "Una flor para otra flor",
-        costo : "Costo: $200 pesos",
+        costo : 200,
         stock : 15,
     },
     {
@@ -132,7 +132,7 @@
         img : '../img/personalizados/personalizado1.jpeg',
         name : "Dulce Graduación",
         descripcion : "Personalizamos para eventos especiales",
-        costo : "Costo: $450 pesos",
+        costo : 450,
         stock : 15,
     },
     {
@@ -141,7 +141,7 @@
         img : '../img/personalizados/perso2.jpeg',
         name : "Aro Fotografico",
         descripcion : "Armamos tu set fotografico para tu dia especial",
-        costo : "Costo: $480 pesos",
+        costo : 480,
         stock : 15,
     }, 
     {
@@ -150,7 +150,7 @@
         img : '../img/personalizados/perso3.jpeg',
         name : "Personalizado Cumpleañero",
         descripcion : "Personalizamos nuestros arreglos para esa persona especial",
-        costo : "Costo: $650 pesos",
+        costo : 650,
         stock : 15,
     }, 
     {
@@ -159,7 +159,7 @@
         img : '../img/personalizados/perso4.jpeg',
         name : "Detalles deliciosos",
         descripcion : "Hacemos arreglos de lo que tu quieras",
-        costo : "Costo: $350 pesos",
+        costo : 350,
         stock : 15,
     }, 
     {
@@ -168,7 +168,7 @@
         img : '../img/personalizados/perso5.jpeg',
         name : "Personalizado Cumpleañero",
         descripcion : "Personalizamos nuestros arreglos para esa persona especial",
-        costo : "Costo: $550 pesos",
+        costo : 550,
         stock : 15,
     }, 
     {
@@ -177,7 +177,7 @@
         img : '../img/personalizados/perso6.jpeg',
         name : "Detalles unicos",
         descripcion : "Arreglos unicos y originales",
-        costo : "Costo: $550 pesos",
+        costo : 550,
         stock : 15,
     },
     {
@@ -186,7 +186,7 @@
         img : '../img/pinatas/pinata1.jpeg',
         name : "Piñata de pastel",
         descripcion : "Piñatas con modelos unicos para tus fiestas",
-        costo : "Costo: $350 pesos",
+        costo : 350,
         stock : 15,
     },
     {
@@ -195,7 +195,7 @@
         img : '../img/pinatas/pinata2.jpeg',
         name : "Piñata de corazón",
         descripcion : "No todas las Piñatas fueron para romperse",
-        costo : "Costo: $350 pesos",
+        costo : 350,
         stock : 15,
     },
     {
@@ -204,7 +204,7 @@
         img : '../img/pinatas/pinata3.jpeg',
         name : "Piñata de pulpo",
         descripcion : "Tambien personalizamos tus piñatas de tus personajes favoritos.",
-        costo : "Costo: $350 pesos",
+        costo : 350,
         stock : 15,
     },
     {
@@ -213,7 +213,7 @@
         img : '../img/pinatas/pinata4.jpeg',
         name : "Piñata Cumpleañera",
         descripcion : "Piñatas con modelos unicos para tus fiestas",
-        costo : "Costo: $380 pesos",
+        costo : 380,
         stock : 15,
     },
 ]

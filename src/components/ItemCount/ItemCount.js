@@ -1,7 +1,8 @@
 import './ItemCount.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom'
+
+
 
 
 
@@ -28,7 +29,7 @@ export const ItemCount = ({max, counter, setCounter, handelAgregar}) => {
                           <button onClick={handleRestar} className='btn btn-outline-dark '>-</button>
                               <span className='mx-2'> {counter} </span>
                           <button onClick={handleSumar} className='btn btn-dark '>+</button>
-                          <Button onClick={handelAgregar}variant="dark m-2 start-50"><Link to='/cart/' className="link"> Agregar al Carrito </Link></Button>
+                          <Button onClick={handelAgregar}variant="dark m-2 start-50"> Agregar al Carrito </Button>
                  </Card.Body>
              
        

@@ -7,17 +7,17 @@ import Spinner from 'react-bootstrap/Spinner';
 
 export const ItemDetailContainer = () => {
 
-    const [detail, setDetail]  = useState([])
+    const [item, setItem]  = useState(null)
     const [loading, setLoading] = useState(true)
     const { itemId } = useParams()
 
-    console.log(itemId)
+   
       
        useEffect(() => {
         setLoading(true)
            PedirDatos()
            .then( (res) => {
-                setDetail(res.filter((item) => item.id === Number(itemId)))  
+                setItem(res.filter((prod) => prod.id === Number(itemId)))  
            })
            .finally( () => {
              setLoading(false)
@@ -32,7 +32,7 @@ export const ItemDetailContainer = () => {
                 <Spinner animation="grow" role="status">
                     <span className=" p-5 col-sm-3">Cargando</span>
                 </Spinner>
-                :<ItemDetail detail = { detail }/>
+                :<ItemDetail item = { item }/>
             }
                
            </div>
