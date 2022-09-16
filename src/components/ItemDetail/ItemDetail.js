@@ -18,8 +18,10 @@
             id: item.id,
             name: item.name,
             costo: item.costo,
+            img: item.img,
             cantidad
        }
+       console.log(itemToCart)
        console.log(isInCart(item.id))
        addToCart(itemToCart)
 
