@@ -17,7 +17,7 @@ export const ItemDetailContainer = () => {
         setLoading(true)
            PedirDatos()
            .then( (res) => {
-                setItem(res.filter((prod) => prod.id === Number(itemId)))  
+                setItem(res.find((prod) => prod.id === Number(itemId)))  
            })
            .finally( () => {
              setLoading(false)
