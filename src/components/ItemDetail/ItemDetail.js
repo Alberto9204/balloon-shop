@@ -21,8 +21,6 @@
             img: item.img,
             cantidad
        }
-       console.log(itemToCart)
-       console.log(isInCart(item.id))
        addToCart(itemToCart)
 
       }

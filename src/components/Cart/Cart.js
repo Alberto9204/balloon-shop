@@ -46,9 +46,10 @@ export const Cart = () =>{
                </div>
            ))}
            
-           <h4 className="d-flex justify-content-end">Total: $ {cartTotal()}.00</h4> 
-             
-        
+           <h4 className="d-flex justify-content-end">Total: $ {cartTotal()}.00</h4>
+           <div className=" d-flex justify-content-end">
+           <Link className="btn btn-dark m-2" to={"/checkout"}>Terminar mi compra</Link>
+           </div>
         </div>
         )
     }
