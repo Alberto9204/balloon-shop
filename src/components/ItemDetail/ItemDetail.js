@@ -5,6 +5,7 @@
    import { useContext, useState  } from 'react'
    import { CartContext } from '../../context/CartContext';
    import { Link } from 'react-router-dom';
+
   
 
    export const ItemDetail = ( {item} ) => {
@@ -24,7 +25,7 @@
        addToCart(itemToCart)
 
       }
-    
+       
      return(
        <div className="Container m-3 col-sm-6" >
                    <div key={item.id} className="Container m-3 col-sm-6">

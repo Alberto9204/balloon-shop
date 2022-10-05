@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Navigate } from 'react-router-dom'
-import {addDoc, collection } from 'firebase/firestore'
+import {addDoc, collection, getDocs, writeBatch, query, where, documentId } from 'firebase/firestore'
 import { db } from '../../firebase/config';
 import { Link } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ import { Link } from 'react-router-dom';
         })
     }
 
-    const handelSubmit = (e) => {
+    const handelSubmit = async (e) => {
         e.preventDefault()
     
         const orden = {
@@ -36,7 +36,6 @@ import { Link } from 'react-router-dom';
 
         }
     }
-   
 
             if (values.nombre.length <2){
                 alert("Nombre invalido")
@@ -47,13 +46,40 @@ import { Link } from 'react-router-dom';
                 return
             }
 
+        const batch = writeBatch(db)    
         const ordenesRef = collection(db, 'ordenes')
+        const productosRef = collection(db, 'Productos')
+        const q = query(productosRef, where(documentId(), 'in' , cart.map(item => item.id) ))
 
-        addDoc(ordenesRef, orden)
-            .then((doc) => {
-                setOrder(doc.id)
-                terminarCompra()
-            })
+        const productos = await getDocs(q)
+        
+        const outOfStock = []
+
+        productos.docs.forEach((doc)=>{
+            const itemInCart = cart.find(item => item.id === doc.id)
+
+            if (doc.data().stock >= itemInCart.cantidad) {
+                batch.update(doc.ref, {
+                    stock: doc.data().stock - itemInCart.cantidad
+                })
+            }else{
+                outOfStock.push(itemInCart)
+            }
+        })
+
+        if (outOfStock.length === 0) {
+            batch.commit()
+                .then(()=> {
+                    addDoc(ordenesRef, orden)
+                        .then((doc) => {
+                            setOrder(doc.id)
+                            terminarCompra()
+                        })
+                })
+        }else{
+            alert("Hay algunos productos sin stock")
+            
+        }
             
     }
 
@@ -81,7 +107,7 @@ import { Link } from 'react-router-dom';
             <form onSubmit={handelSubmit}>
                 <input 
                     type={'text'} 
-                    placeholder="Introduce tu nombre" 
+                    placeholder="Introduce tu nombre completo" 
                     className="my-2 form-control" 
                     name="nombre" 
                     onChange={handelInputChange} 
