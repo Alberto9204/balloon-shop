@@ -1,12 +1,8 @@
 import './Navbar.css'
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from 'react-bootstrap/Nav';
 import { CartWidget } from './CartWidget/CartWidget.js';
 import { Link } from 'react-router-dom'
-
-
-
 
 
 export const NavBar = () => {
@@ -27,10 +23,6 @@ export const NavBar = () => {
                     </Nav>
                 </div>
 
-                <div className='btn'>
-                    <Button variant="light">Inicia Sesion</Button>{' '}
-                    <Button variant="light">Registrate</Button>{' '}
-                </div>
                 <div className='btnCar'>
                     <CartWidget />
                 </div>
